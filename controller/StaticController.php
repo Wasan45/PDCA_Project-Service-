@@ -7,28 +7,31 @@ class StaticController{
  
     }
     
-    public function findMin(){
- 
+    public function findMin($POST){
+        $from_id = $POST;
+        
+        $db = new DB();
+        $sql = "";
     }
     
-    public function findMax(){
- 
+    public function findMax($POST){
+        $from_id = $POST;
     }
     
-    public function findMean(){
- 
+    public function findMean($POST){
+        $from_id = $POST;
     }
     
-    public function findMode(){
- 
+    public function findMode($POST){
+        $from_id = $POST;
     }
     
-    public function findStandardDeviation(){
- 
+    public function findStandardDeviation($POST){
+        $from_id = $POST;
     }
     
-    public function findNumberAns(){
- 
+    public function findNumberAns($POST){
+        $from_id = $POST;
     }
     
 }

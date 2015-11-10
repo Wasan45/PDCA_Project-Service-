@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="" id="show-image"></div>
+    <p id="status"></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $.getJSON('services/graph.php', function(json, textStatus) {
+        $("#show-image").append($("<img />").attr('src', 'data:image/png;charset=utf8;base64,' + json.image));
+        $("#status").text(textStatus);
+      });
+    });
+    </script>
+  </body>
+</html>
