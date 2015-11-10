@@ -8,7 +8,7 @@ class GraphController{
         
     }
     
-    public function drawPieChart($height= 480, $width= 640, $data_array = array('Score A' =>  50 ,'Score B' => 90)){
+    public function drawPieChart($height= 450, $width= 640, $data_array = array('Score A' =>  50 ,'Score B' => 90)){
         $font = '../Controller/GeosansLight.ttf'; /** set front */
         $this->image = imagecreate($width,$height);
         $piewidth = $width * 0.7;/* pie area */
